@@ -1,0 +1,363 @@
+header .left .logo {
+  height: 60px;
+}
+header .center .center-container {
+  position: absolute;
+  bottom: 0px;
+}
+header .center .center-container .list button {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  border: 0;
+  color: black;
+  background-color: transparent;
+  cursor: pointer;
+  letter-spacing: 1.87px;
+  text-decoration: underline;
+}
+header .right {
+  flex-grow: 1;
+}
+header .right .up-right {
+  align-self: flex-end;
+}
+header .right .up-right a {
+  text-decoration: none !important;
+  font-size: 12px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-style: normal;
+  line-height: 16px;
+  font-weight: 500;
+  color: black;
+  cursor: pointer;
+}
+header .right .up-right a img {
+  width: 20px;
+  height: 10px;
+}
+header .right .down {
+  display: flex;
+  bottom: 0;
+  right: 0;
+  align-self: flex-end;
+}
+header .right .down .search {
+  background-color: #eceff1;
+  height: 32px;
+  width: 230px;
+}
+header .right .down .search input {
+  background-color: #eceff1;
+  border: none;
+}
+header .right .down .search i {
+  color: black;
+}
+header .right .down .profile {
+  position: relative;
+}
+header .right .down .profile i {
+  font-size: 24px;
+}
+header .right .down .notification {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  background-color: #ede734;
+  border-radius: 50%;
+  opacity: 0.9;
+  font-size: 12px;
+  font-weight: 700;
+  transform: translateY(-50%);
+  animation: jump 2s infinite;
+}
+@keyframes jump {
+  0% {
+    transform: translateY(-60%);
+  }
+  25% {
+    transform: translateY(-80%);
+  }
+  50% {
+    transform: translateY(-60%);
+  }
+  75% {
+    transform: translateY(-80%);
+  }
+  80% {
+    transform: translateY(-60%);
+  }
+  90% {
+    transform: translateY(-60%);
+  }
+  100% {
+    transform: translateY(-60%);
+  }
+}
+
+.main-1, .main-2 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.main-1 .left-container .cnt, .main-2 .left-container .cnt {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-1 .left-container .cnt .text-container, .main-2 .left-container .cnt .text-container {
+  width: 435px;
+}
+.main-1 .left-container .cnt .text-container .card-title, .main-1 .left-container .cnt .text-container .text, .main-2 .left-container .cnt .text-container .card-title, .main-2 .left-container .cnt .text-container .text {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+.main-1 .left-container .cnt .text-container .card-title, .main-2 .left-container .cnt .text-container .card-title {
+  font-size: 36px;
+  margin: 0;
+}
+
+.main-1 {
+  background-image: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/enUS/Images/soccer-fw23-messi-reactive-mh-d_tcm221-1057973.jpg");
+  height: 320px;
+}
+.main-1 .top-button {
+  position: relative;
+  background-color: none;
+  border: 1px solid #ffffff;
+  width: 168px;
+  height: 59px;
+  margin-bottom: 13px;
+}
+.main-1 .bottom-button {
+  position: relative;
+  background-color: none;
+  border: 1px solid #ffffff;
+  width: 223px;
+  height: 69px;
+}
+.main-1 .top {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: 3px;
+  height: 58px;
+  border: none;
+}
+.main-1 .top:hover {
+  color: #746c6c;
+  transform: translate(3px, 3px);
+  transition: 0.2s;
+}
+.main-1 .bottom {
+  position: absolute;
+  height: 68px;
+  top: -3px;
+  left: -3px;
+  right: 2px;
+  border: none;
+}
+.main-1 .bottom:hover {
+  color: #746c6c;
+  transform: translate(3px, 2px);
+  transition: 0.2s;
+}
+
+.main-2 {
+  background-image: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/enUS/Images/ub10--mh-lg-m-d_tcm221-1056615.jpg");
+  height: 560px;
+}
+.main-2 .left-container {
+  padding-top: 140px;
+}
+.main-2 .left-container .top-button {
+  position: relative;
+  background-color: none;
+  border: 1px solid #ffffff;
+  width: 158px;
+  height: 59px;
+  margin-bottom: 13px;
+}
+.main-2 .left-container .bottom-button {
+  position: relative;
+  background-color: none;
+  border: 1px solid #ffffff;
+  width: 183px;
+  height: 69px;
+}
+.main-2 .left-container .top {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: 3px;
+  height: 58px;
+  border: none;
+}
+.main-2 .left-container .top:hover {
+  color: #746c6c;
+  transform: translate(3px, 3px);
+  transition: 0.2s;
+}
+.main-2 .left-container .bottom {
+  position: absolute;
+  height: 68px;
+  top: -3px;
+  left: -3px;
+  right: 2px;
+  border: none;
+}
+.main-2 .left-container .bottom:hover {
+  color: #746c6c;
+  transform: translate(3px, 3px);
+  transition: 0.2s;
+}
+
+.main-3 {
+  background-color: rgb(237, 237, 227);
+  height: 326px;
+  flex-direction: column;
+}
+.main-3 .center, .main-3 .text {
+  flex-direction: column;
+  align-items: center;
+}
+.main-3 .center {
+  color: black;
+  font-weight: bolder;
+  font-size: 28px;
+  line-height: 28px;
+  padding-top: 55px;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+.main-3 .text {
+  margin-left: 410px;
+  padding: 10px;
+  width: 520px;
+}
+.main-3 .text p {
+  margin-bottom: 0.1px;
+}
+.main-3 .button-container {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+.main-3 .button-container .center {
+  display: flex;
+  padding-top: 0;
+}
+.main-3 .button-container .center .upper, .main-3 .button-container .center .lower {
+  width: fit-content;
+  text-decoration: underline;
+  border: none;
+  background-color: transparent;
+  font-weight: 700;
+}
+.main-3 .button-container .center .upper span, .main-3 .button-container .center .lower span {
+  font-size: 12px;
+}
+.main-3 .button-container .upper:hover, .main-3 .button-container .lower:hover {
+  color: #eceff1;
+  text-decoration: underline solid black;
+}
+.main-3 .button-container span {
+  background-color: transparent;
+  font-size: 15px;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+.main-3 .button-container .upper:hover, .main-3 .button-container .lower:hover {
+  background-color: black;
+  transition: 0.2s all linear;
+}
+.main-3 .button-container .upper:hover span, .main-3 .button-container .lower:hover span {
+  color: #ffffff;
+}
+
+.main-4 {
+  width: 100%;
+  height: 320px;
+}
+.main-4 .pictures {
+  padding: 40px;
+}
+.main-4 .pictures .pc-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.main-4 .pictures .pc-container a {
+  width: 24%;
+  background-color: #eceff1;
+  margin-top: 40px;
+}
+.main-4 .pictures .pc-container a .stb-cnt, .main-4 .pictures .pc-container a .ndb-cnt, .main-4 .pictures .pc-container a .rdb-cnt, .main-4 .pictures .pc-container a .thb-cnt {
+  flex-direction: column;
+  margin: 0;
+  padding-top: 0;
+  box-sizing: border-box;
+  background-color: #eceff1;
+}
+.main-4 .pictures .pc-container a .stb-cnt img, .main-4 .pictures .pc-container a .ndb-cnt img, .main-4 .pictures .pc-container a .rdb-cnt img, .main-4 .pictures .pc-container a .thb-cnt img {
+  height: 174px;
+  width: 174px;
+}
+.main-4 .pictures .pc-container a .stb-cnt span, .main-4 .pictures .pc-container a .ndb-cnt span, .main-4 .pictures .pc-container a .rdb-cnt span, .main-4 .pictures .pc-container a .thb-cnt span {
+  text-decoration: underline;
+  color: black;
+  font-weight: 700;
+  font-size: 14px;
+}
+.main-4 .pictures .pc-container a .stb-cnt span:hover, .main-4 .pictures .pc-container a .ndb-cnt span:hover, .main-4 .pictures .pc-container a .rdb-cnt span:hover, .main-4 .pictures .pc-container a .thb-cnt span:hover {
+  background-color: black;
+  color: #ffffff;
+  text-decoration: underline solid black;
+}
+.main-4 .pictures .pc-container a:hover {
+  cursor: pointer;
+}
+
+.main-5 .top {
+  padding-top: 40px;
+}
+.main-5 .top i {
+  font-size: 30px;
+  margin-right: -20px;
+}
+.main-5 .top button {
+  border: none;
+  background-color: transparent;
+}
+.main-5 .top button span {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+.main-5 .bottom {
+  padding: 40px;
+}
+.main-5 .bottom .pc-container {
+  display: flex;
+  overflow-x: scroll;
+  touch-action: auto;
+}
+.main-5 .bottom .pc-container::-webkit-scrollbar {
+  display: none;
+}
+.main-5 .bottom .pc-container img {
+  height: auto;
+  width: 278px;
+}
+.main-5 .bottom .pc-container .price {
+  position: relative;
+  padding-top: -12px;
+}
+
+/*# sourceMappingURL=main.css.map */
