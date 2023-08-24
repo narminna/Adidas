@@ -277,6 +277,7 @@ header .right .down .notification {
 .main-4 {
   width: 100%;
   height: 320px;
+  padding-bottom: 363px;
 }
 .main-4 .pictures {
   padding: 40px;
@@ -287,11 +288,15 @@ header .right .down .notification {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
+  margin-left: -69px;
+  margin-right: 82px;
 }
 .main-4 .pictures .pc-container a {
   width: 24%;
   background-color: #eceff1;
   margin-top: 40px;
+  margin-right: -135px;
+  width: 305px;
 }
 .main-4 .pictures .pc-container a .stb-cnt, .main-4 .pictures .pc-container a .ndb-cnt, .main-4 .pictures .pc-container a .rdb-cnt, .main-4 .pictures .pc-container a .thb-cnt {
   flex-direction: column;
@@ -320,12 +325,12 @@ header .right .down .notification {
   cursor: pointer;
 }
 
-.main-5 {
-  padding-bottom: 100%;
-}
 .main-5 .top {
   padding-top: 40px;
   margin-left: 40px;
+}
+.main-5 .top .left {
+  padding-bottom: 34px;
 }
 .main-5 .top .left i {
   font-size: 30px;
@@ -344,6 +349,25 @@ header .right .down .notification {
   margin-right: 60px;
   font-size: 18px;
 }
+.main-5 .top .right button:hover {
+  background-color: black;
+}
+.main-5 .top .right button:hover i {
+  color: white;
+}
+.main-5 .top .right a {
+  color: black;
+  text-decoration: underline;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+.main-5 .top .right a:hover {
+  background-color: black;
+  color: white;
+  -webkit-text-decoration: underline solid black;
+          text-decoration: underline solid black;
+}
 .main-5 .top .right button {
   border: 0;
   background-color: transparent;
@@ -354,7 +378,9 @@ header .right .down .notification {
 .main-5 .bottom .pc-container {
   display: flex;
   overflow-x: scroll;
-  touch-action: auto;
+  overflow-y: hidden;
+  touch-action: pan-right;
+  white-space: nowrap;
 }
 .main-5 .bottom .pc-container::-webkit-scrollbar {
   display: none;
@@ -366,18 +392,14 @@ header .right .down .notification {
 .main-5 .bottom .pc-container .box {
   position: relative;
   margin-right: 6px;
-}
-.main-5 .bottom .pc-container .box:hover {
-  border: 1px solid black;
-}
-.main-5 .bottom .pc-container .box:hover .price {
-  transform: translateY(-3px);
+  height: 373px;
+  border: 1px solid white;
 }
 .main-5 .bottom .pc-container .box .price {
   position: absolute;
-  bottom: 15px;
+  bottom: 92px;
   left: 10px;
-  transition: transfrom 0.3 s ease;
+  transition: transfrom 0.3s ease;
 }
 .main-5 .bottom .pc-container .box .price span {
   display: flex;
@@ -386,15 +408,300 @@ header .right .down .notification {
   padding-top: -32px;
   background-color: #ffffff;
   color: black;
-  padding: 2px 5px;
 }
 .main-5 .bottom .pc-container .box .text {
   position: absolute;
-  padding-top: 30px;
+  padding-top: 5px;
+  margin-left: 15px;
   left: 0;
 }
-.main-5 .bottom .pc-container .box .text .t {
-  margin: 32px;
+.main-5 .bottom .pc-container .box .text .t, .main-5 .bottom .pc-container .box .text .t2 {
   color: black;
-  background-color: red;
+  margin-top: 2px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+}
+.main-5 .bottom .pc-container .box .text .t2 {
+  margin-top: -12px;
+}
+.main-5 .bottom .pc-container .box:hover {
+  border: 1px solid black;
+}
+.main-5 .bottom .pc-container .box:hover .price {
+  transform: translateY(-6px);
+  transition: 0.2s;
+}
+
+.main-6 {
+  padding-top: 145px;
+  margin-left: 48px;
+}
+.main-6 .picture-container {
+  display: flex;
+  margin-right: 59px;
+}
+.main-6 .picture-container .box {
+  margin-right: 10px;
+}
+.main-6 .picture-container .box img {
+  height: 403px;
+  width: 302px;
+}
+.main-6 .picture-container .box text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.main-6 .picture-container .box .t {
+  padding-top: 15px;
+  font-size: 16px;
+}
+.main-6 .picture-container .box .t2, .main-6 .picture-container .box .t21 {
+  font-size: 13px;
+  margin-bottom: 38px;
+  font-size: 14px;
+  line-height: 18px;
+}
+.main-6 .picture-container .box .t21 {
+  margin-bottom: 14px;
+}
+.main-6 .picture-container .box button {
+  border: none;
+  background-color: transparent;
+  margin-top: auto;
+}
+.main-6 .picture-container .box button span {
+  text-decoration: underline;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+.main-6 .picture-container .box button span:hover {
+  background-color: black;
+  color: white;
+  -webkit-text-decoration: underline solid black;
+          text-decoration: underline solid black;
+}
+.main-6 .picture-container .box .s {
+  padding-bottom: -2px;
+}
+
+.main-7 {
+  margin: 66px;
+}
+.main-7 h4 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+.main-7 .box {
+  margin-right: -5px;
+  position: relative;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  margin-right: 8px;
+}
+.main-7 .box img {
+  width: 295px;
+  height: 193px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main-7 .box .text {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  margin-left: 10px;
+  position: relative;
+  min-height: 150px;
+  margin-top: -24px;
+  background-color: #ffffff;
+  margin-left: 20px;
+}
+.main-7 .box .text .t2 {
+  margin-left: 12px;
+}
+.main-7 .box .text .title {
+  font-weight: 700;
+  margin-left: 10px;
+}
+.main-7 .container {
+  margin: -30px;
+}
+.main-7 .container h2 {
+  margin-top: 60px;
+  letter-spacing: 0px;
+  line-height: 36px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 59px;
+}
+.main-7 .container .row {
+  margin-bottom: 47px;
+}
+.main-7 .container .row .col {
+  margin-left: 15px;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 40px;
+  color: black;
+  border-bottom: 1px solid black;
+  margin-bottom: -1px;
+  text-decoration: none;
+}
+.main-7 .container .row .col:hover {
+  border-bottom: 10px solid black;
+}
+
+.main-8 {
+  margin-left: -72px;
+  background-color: #f5f5e5;
+}
+.main-8 .container {
+  padding-top: 12px;
+}
+.main-8 h2 {
+  width: 420px;
+  padding-top: 50px;
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+}
+.main-8 .text {
+  width: 575px;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 73px;
+}
+.main-8 .right {
+  margin-left: 79px;
+}
+.main-8 .right .text {
+  margin-top: 57px;
+}
+
+.main-9 {
+  background-color: #ede734;
+  height: 133px;
+}
+.main-9 span {
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-top: 36px;
+}
+.main-9 .button {
+  margin-top: 36px;
+  position: relative;
+  background-color: none;
+  border: 1px solid black;
+  width: 268px;
+  height: 59px;
+  margin-bottom: 13px;
+  background-color: transparent;
+}
+.main-9 button {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: 3px;
+  height: 58px;
+  border: none;
+  background-color: black;
+}
+.main-9 button span {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #ffffff;
+}
+.main-9 button i {
+  color: white;
+}
+.main-9 button:hover {
+  transform: translate(3px, 3px);
+  transition: 0.2s;
+}
+.main-9 button:hover i, .main-9 button:hover span {
+  color: #746c6c;
+}
+
+.main-10 {
+  margin-left: 170px;
+  margin-right: 180px;
+  margin-top: 37px;
+  margin-bottom: 42px;
+}
+.main-10 .loc {
+  margin-left: auto;
+  padding-left: ayto;
+  display: flex;
+  flex-direction: column;
+}
+.main-10 .loc1 {
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+  justify-content: left;
+}
+.main-10 .title {
+  margin-right: 25px;
+}
+.main-10 h5 {
+  font-weight: 700;
+  line-height: 22px;
+  color: black;
+}
+.main-10 .a1 {
+  margin-top: 15px;
+}
+.main-10 a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 24px;
+  margin-right: 25px;
+}
+.main-10 a:hover {
+  text-decoration: underline;
+}
+.main-10 button {
+  background-color: transparent;
+  border: none;
+}
+.main-10 button i {
+  font-size: 25px;
+  margin-bottom: 2px;
+}
+
+footer {
+  height: 130px;
+  background-color: #2b2b30;
+}
+footer .r {
+  padding-top: 33px;
+}
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+  border-right: 1px solid #ffffff;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+footer a:last-child {
+  border-right: none;
+}
+footer p {
+  color: #eceff1;
+  font-size: 12px;
+  margin-top: 42px;
 }/*# sourceMappingURL=main.css.map */
