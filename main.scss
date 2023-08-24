@@ -278,19 +278,13 @@ header {
         }
       }
     }
-    .upper:hover, .lower:hover {
-      color: #eceff1;
-      text-decoration: underline solid black;
-    }
     span {
       background-color: transparent;
       font-size: 15px;
       font-family: "Helvetica", "Arial", sans-serif;
-    }
-    .upper:hover, .lower:hover {
-      background-color: black;
-      transition: 0.2s all linear;
-      span {
+      &:hover{
+        background-color: black;
+        transition: 0.2s all linear;
         color: #ffffff;
       }
     }
@@ -320,18 +314,20 @@ header {
           img {
             height: 174px;
             width: 174px;
-          }  
-          span {
-            text-decoration: underline;
-            color: black;
-            font-weight: 700;
-            font-size: 14px;
-            &:hover{
-              background-color: black;
-              color: #ffffff;
-              text-decoration: underline solid black;
-            }
           }
+          .span{            
+            span {
+              text-decoration: underline;
+              color: black;
+              font-weight: 700;
+              font-size: 14px;
+              &:hover{
+                background-color: black;
+                color: #ffffff;
+                text-decoration: underline solid black;
+              }
+            }
+          }  
         }  
         &:hover {
           cursor: pointer;
@@ -341,42 +337,82 @@ header {
   }
 }
 .main-5 {
-  .top {
+  padding-bottom: 100%;
+  .top{    
     padding-top: 40px;
-    
-    i {
-      font-size: 30px;
-      margin-right: -20px;
-    }
-    
-    button {
-      border: none;
-      background-color: transparent;
+    margin-left: 40px;
+    .left {      
+      i {
+        font-size: 30px;
+        margin-right: -2px;
+      }
       
-      span {
-        font-size: 28px;
-        font-weight: 700;
-        font-family: "Helvetica", "Arial", sans-serif;
+      button {
+        border: none;
+        background-color: transparent;
+        
+        span {
+          font-size: 28px;
+          font-weight: 700;
+          font-family: "Helvetica", "Arial", sans-serif;
+        }
+      }
+    }
+    .right{
+      margin-right: 60px;
+      font-size: 18px;
+      button{
+        border: 0;
+        background-color: transparent;
       }
     }
   }
-
   .bottom {
-    padding: 40px;
+    padding-left: 60px;
     .pc-container {
       display: flex;
       overflow-x: scroll;
       touch-action: auto;
       &::-webkit-scrollbar {
         display: none;
-    }
+      }
       img {
         height: auto;
         width: 278px;
       }
-      .price{
+      .box{
         position: relative;
-        padding-top: -12px;
+        margin-right: 6px;
+        &:hover{
+          border: 1px solid black;
+          .price{
+            transform: translateY(-3px);
+          }
+        }
+        .price{
+          position: absolute;
+          bottom: 15px;
+          left: 10px;
+          transition: transfrom .3 s ease;
+          span{
+            display: flex;
+            width: fit-content;
+            padding-top: -32px;
+            background-color: #ffffff;
+            color: black;
+            padding: 2px 5px;
+          }
+        }
+        .text{
+          position: absolute;          
+          padding-top: 30px;
+          left: 0;
+          .t{
+            margin: 32px;
+            color: black;
+            background-color: red;
+          }
+        }
       }
     }
   }
